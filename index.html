@@ -16,34 +16,73 @@
 <body>
 
 <h1>Privacy Policy for Slippery Seal</h1>
-<p class="sub">Last updated: 24 August 2026</p>
+<p class="sub">Last updated: 13 September 2026</p>
 
 <p>Slippery Seal ("the app", package <code>com.slipperysealgame.slipperyseal</code>)
 is developed by ASHISH KUMAR ("we", "us"). This policy explains how the app
 handles your information.</p>
 
 <h2>Summary</h2>
-<p><strong>We do not run any servers and we do not receive your personal data.</strong>
-The app has no advertising and no analytics.</p>
-<p>The only feature that uses the network is the optional global leaderboard, and
-<strong>it exists only in the Android version</strong>, where it is provided by
-Google Play Games Services. <strong>The iPhone and iPad version makes no network
-connections at all</strong> and collects nothing.</p>
+<p><strong>We do not collect or store your personal data.</strong> The app has
+no accounts, no advertising and no analytics.</p>
+<p>The app uses the network for two optional features:</p>
+<ul>
+  <li><strong>Race mode</strong> ("Play with friends"), on both iPhone/iPad and
+      Android. When you race, the app connects to a small relay server we run so
+      that the players in your room can see each other. The server keeps nothing
+      once the room closes.</li>
+  <li><strong>The global leaderboard</strong>, on Android only, provided by
+      Google Play Games Services.</li>
+</ul>
+<p>If you use neither, the app does not connect to anything.</p>
 
 <h2>Which version you are using</h2>
 <ul>
-  <li><strong>iPhone / iPad (App Store, TestFlight):</strong> the app has no
-      leaderboard, no accounts, no advertising, no analytics and no network
-      access of any kind. Nothing leaves your device. Only the
-      "Information stored on your device" section below applies to you.</li>
+  <li><strong>iPhone / iPad (App Store, TestFlight):</strong> there is no
+      leaderboard. The only network feature is race mode, described below.</li>
   <li><strong>Android (Google Play):</strong> everything below applies,
-      including the optional leaderboard.</li>
+      including race mode and the optional leaderboard.</li>
+</ul>
+
+<h2>Race mode</h2>
+<p>Race mode is private and invite-only. One player creates a room and shares a
+short room code, and up to four players who have that code can join. There are
+no public lobbies and no matchmaking with strangers.</p>
+<p>While you are in a room, the app sends the following to our relay server,
+which passes it on to the other players in the same room:</p>
+<ul>
+  <li>a <strong>race name chosen by the game</strong> for your seal;</li>
+  <li>the <strong>colour and accessories</strong> your seal is wearing;</li>
+  <li>during a race, your seal's <strong>position, speed and actions</strong>
+      (such as jumping and pushing);</li>
+  <li>your <strong>finish time</strong> and a few race counters (such as pushes
+      landed and barrel rolls) used for the end-of-race awards.</li>
+</ul>
+<p>How this is handled:</p>
+<ul>
+  <li><strong>Only the players in your room see it.</strong> They see your
+      race name, how your seal looks, and how you raced.</li>
+  <li><strong>It is not stored.</strong> The server holds it in memory only while
+      the room exists. It is gone as soon as the host leaves, everyone leaves, or
+      the room has been idle for 10 minutes. It is not written to disk, not
+      logged, and not kept in any database.</li>
+  <li><strong>The name you type for your seal stays on your device.</strong> It
+      is not sent to other players or to our server.</li>
+  <li><strong>There is no chat.</strong> You cannot send messages, text,
+      pictures or audio to other players.</li>
+  <li>The connection is <strong>encrypted in transit</strong>.</li>
+  <li>The relay server is hosted by <strong>Fly.io</strong> (currently in
+      Singapore). As with any internet connection, the server and Fly.io see your
+      device's IP address while you are connected, so that data can reach you.
+      Our server does not record it. Fly.io's handling of connection data is
+      covered by the
+      <a href="https://fly.io/legal/privacy-policy/">Fly.io Privacy Statement</a>.</li>
 </ul>
 
 <h2>The leaderboard (Android only)</h2>
-<p>On Android, if you are signed in to Google Play Games on your device, the app can submit
-your run score to a leaderboard operated by Google, and can display the
-leaderboard to you. In that case:</p>
+<p>On Android, if you are signed in to Google Play Games on your device, the app
+can submit your run score to a leaderboard operated by Google, and can display
+the leaderboard to you. In that case:</p>
 <ul>
   <li>Your <strong>score</strong> and your Play Games <strong>display name and
       player ID</strong> are processed by Google in order to rank and show the
@@ -53,21 +92,27 @@ leaderboard to you. In that case:</p>
       We do not store it ourselves, and we have no database of players.</li>
   <li>Other players may see your Play Games display name and score on the
       leaderboard. This is the normal behaviour of a public leaderboard.</li>
-  <li><strong>The app never asks you to type a name.</strong> There is no
-      nickname field and no chat, so you cannot enter personal information into
-      the app.</li>
+  <li>The leaderboard never shows the name you give your seal.</li>
 </ul>
 
 <h2>Opting out</h2>
-<p>The leaderboard is optional. If you are not signed in to Google Play Games,
-or you decline the sign-in prompt, or you are offline, the app shows your own
-best runs stored on your device instead, and nothing is transmitted. You can
-sign out or manage your Play Games profile and data at any time in the Google
-Play Games app.</p>
+<p>Both network features are optional, and the rest of the game works fully
+offline.</p>
+<ul>
+  <li><strong>Race mode:</strong> if you never open "Play with friends", the app
+      never connects to our relay server.</li>
+  <li><strong>Leaderboard (Android):</strong> if you are not signed in to Google
+      Play Games, or you decline the sign-in prompt, or you are offline, the app
+      shows your own best runs stored on your device instead, and nothing is
+      transmitted. You can sign out or manage your Play Games profile and data at
+      any time in the Google Play Games app.</li>
+</ul>
 
 <h2>Deleting your data</h2>
-<p>On iPhone and iPad there is nothing to delete anywhere but your own device:
-deleting the app removes everything it ever stored.</p>
+<p>Race mode leaves nothing to delete: our server does not keep anything once a
+room closes.</p>
+<p>On iPhone and iPad, everything else is on your own device, and deleting the
+app removes all of it.</p>
 <p>Full step-by-step instructions are on a dedicated page:
 <a href="./delete-data/"><strong>Delete your data</strong></a>. In short: your
 leaderboard scores and Play Games display name are deleted through your own
@@ -75,16 +120,22 @@ Google Account, and everything else is on your device and is removed when you
 uninstall the app. We hold no copy of any of it.</p>
 
 <h2>Information stored on your device</h2>
-<p>The app saves your game progress — high score, in-game fish currency, owned
-and equipped cosmetic items, missions, settings, and your device's own best-run
-list — to files in the app's private storage. This data never leaves your
-device, is not readable by other apps, and is not accessible to us.
-Uninstalling the app deletes it.</p>
+<p>The app saves your game progress (high score, in-game fish currency, owned
+and equipped cosmetic items, missions, settings, the name you give your seal,
+and your device's own best-run list) to files in the app's private storage.
+This data never leaves your device, is not readable by other apps, and is not
+accessible to us. Uninstalling the app deletes it.</p>
 
 <h2>Third parties</h2>
 <p>The app contains no third-party advertising SDKs, no analytics SDKs, and no
-social media integrations. The only third-party service is Google Play Games
-Services, described above. We do not sell data to anyone.</p>
+social media integrations. The third-party services involved are:</p>
+<ul>
+  <li><strong>Google Play Games Services</strong> (Android only), for the
+      leaderboard, described above.</li>
+  <li><strong>Fly.io</strong>, which hosts the race-mode relay server on our
+      behalf, described above.</li>
+</ul>
+<p>We do not sell data to anyone.</p>
 
 <h2>Children</h2>
 <p>The app is directed to a general audience aged 18 and over and is not
@@ -94,9 +145,14 @@ to minors.</p>
 
 <h2>Test builds</h2>
 <p>Builds distributed through Google Play testing tracks and through Apple
-TestFlight are subject to this same policy. Google Play itself may collect information about installations and
-crashes independently of the app; that processing is governed by Google's
-Privacy Policy, not this one.</p>
+TestFlight are subject to this same policy. Google Play itself may collect
+information about installations and crashes independently of the app; that
+processing is governed by Google's Privacy Policy, not this one.</p>
+<p>Some test builds released before this update showed the name you typed for
+your seal to the other players in your race room, instead of a name chosen by
+the game. That name was handled in the same way as the rest of the race data
+above: passed only to the players in the room, held in memory only while the
+room existed, and never stored or logged.</p>
 
 <h2>Changes to this policy</h2>
 <p>If this policy changes, the updated version will be posted at this same
