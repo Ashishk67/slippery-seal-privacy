@@ -21,15 +21,17 @@
 <body>
 
 <h1>Delete your data — Slippery Seal</h1>
-<p class="sub">App: <strong>Slippery Seal</strong> · Developer: <strong>ASHISH KUMAR</strong> · Last updated: 24 August 2026</p>
+<p class="sub">App: <strong>Slippery Seal</strong> · Developer: <strong>ASHISH KUMAR</strong> · Last updated: 13 September 2026</p>
 
-<p class="note"><strong>Slippery Seal has no user accounts and no servers.</strong> We do not
-operate a database of players and we hold no personal data about you. The only
-information that ever leaves your device is your leaderboard score and your
-Google Play Games display name, and those are held by <strong>Google</strong>,
-not by us. The steps below are how you delete them.</p>
+<p class="note"><strong>Slippery Seal has no user accounts, and we do not store
+your data on any server.</strong> We do not operate a database of players and we
+hold no personal data about you. Race mode uses a relay server we run, but it only
+passes race information between the players in a room and keeps nothing once the
+room closes. On Android, your leaderboard score and Google Play Games display name
+are held by <strong>Google</strong>, not by us. The steps below cover everything
+that can be deleted.</p>
 
-<h2>1. Delete your leaderboard scores and gamer profile</h2>
+<h2>1. Delete your leaderboard scores and gamer profile (Android only)</h2>
 <p>These are stored by Google Play Games Services. To remove them:</p>
 <ol>
   <li>Open <a href="https://play.google.com/games/profile">play.google.com/games/profile</a>,
@@ -44,34 +46,62 @@ not by us. The steps below are how you delete them.</p>
 <p>Google occasionally changes the wording of these settings. If you cannot find
 the option, the same data can be reviewed and deleted from your Google Account
 at <a href="https://myaccount.google.com">myaccount.google.com</a>.</p>
+
 <h2>2. Delete the data stored on your device</h2>
-<p>Your high score, in-game fish currency, cosmetic items, missions, settings and
-your device's own best-run list are saved in the app's private storage on your
-phone. <strong>Uninstalling Slippery Seal deletes all of it immediately.</strong>
-You can also use <em>Android Settings → Apps → Slippery Seal → Storage → Clear
-data</em> to reset it without uninstalling.</p>
+<p>Your high score, in-game fish currency, cosmetic items, missions, settings, the
+name you gave your seal and your device's own best-run list are saved in the
+app's private storage on your device. <strong>Uninstalling Slippery Seal deletes
+all of it immediately.</strong></p>
+<ul>
+  <li><strong>Android:</strong> uninstall the app, or use <em>Settings → Apps →
+      Slippery Seal → Storage → Clear data</em> to reset it without
+      uninstalling.</li>
+  <li><strong>iPhone / iPad:</strong> touch and hold the app icon, then choose
+      <em>Remove App → Delete App</em>.</li>
+</ul>
+
+<h2>3. Race mode: nothing to delete</h2>
+<p>When you race with friends, your seal's race name, its colour and accessories,
+its position and actions during the race, and your finish time are passed through
+our relay server to the other players in your room. The server holds this in
+memory only while the room exists, and deletes it automatically when the host
+leaves, everyone leaves, or the room has been idle for 10 minutes. It is never
+written to disk, logged or stored, so there is nothing left for anyone to
+delete.</p>
 
 <h2>What is deleted and what is kept</h2>
 <table>
   <tr><th>Data</th><th>Where it lives</th><th>On deletion</th></tr>
   <tr>
-    <td>Leaderboard scores</td>
+    <td>Leaderboard scores (Android)</td>
     <td>Google Play Games Services</td>
     <td>Deleted. No additional retention period by us, because we never hold a copy.</td>
   </tr>
   <tr>
-    <td>Play Games display name and player ID</td>
+    <td>Play Games display name and player ID (Android)</td>
     <td>Your Google Account</td>
     <td>Deleted with your Play Games profile, under Google's retention policy.</td>
   </tr>
   <tr>
-    <td>Game progress, currency, cosmetics, settings</td>
+    <td>Game progress, currency, cosmetics, seal name, settings</td>
     <td>Your device only</td>
     <td>Deleted immediately when you uninstall or clear app data.</td>
   </tr>
   <tr>
-    <td>Any data held by the developer</td>
-    <td>None — we have no servers</td>
+    <td>Race-mode data: race name, look, position, actions and race results
+        (in some earlier test builds, the name you typed for your seal)</td>
+    <td>Our relay server's memory, only while the room is open</td>
+    <td>Deleted automatically when the room closes. Never stored or logged.</td>
+  </tr>
+  <tr>
+    <td>Your IP address while connected to race mode</td>
+    <td>Seen by our relay server and its host, Fly.io, while you are connected</td>
+    <td>Not recorded by our server. Fly.io's handling is covered by the
+        <a href="https://fly.io/legal/privacy-policy/">Fly.io Privacy Statement</a>.</td>
+  </tr>
+  <tr>
+    <td>Any stored data held by the developer</td>
+    <td>None — our server stores nothing</td>
     <td>Nothing to delete.</td>
   </tr>
 </table>
@@ -80,8 +110,9 @@ data</em> to reset it without uninstalling.</p>
 <p>If you cannot complete these steps, email
 <a href="mailto:slipperysealgame@gmail.com">slipperysealgame@gmail.com</a> and
 we will help you find the right setting. Note that because we hold no data
-ourselves, we cannot delete it on your behalf — it has to be done through your
-own Google Account.</p>
+ourselves, we cannot delete it on your behalf — leaderboard data has to be
+deleted through your own Google Account, and everything else through your
+device.</p>
 
 <p><a href="../">← Back to the Slippery Seal privacy policy</a></p>
 
